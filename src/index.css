@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap');
+@tailwind base;
+html {
+    scroll-behavior: smooth;
+}
+@tailwind components;
+@tailwind utilities;
