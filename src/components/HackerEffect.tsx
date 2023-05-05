@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-const HackerEffect = ({ text, styles, level }:any) => {
+const HackerEffect = ({ text, styles }:any) => {
     const [displayText, setDisplayText] = useState(text);
 
     useEffect (()=> {
@@ -8,9 +8,11 @@ const HackerEffect = ({ text, styles, level }:any) => {
         const interval = setInterval(() => {
             setDisplayText((prevText:any) => {
                 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-                const newText = prevText.split("").map((letter:undefined, index:number) => {
+                const newText = prevText.split("").map((letter: any , index:number) => {
                         if (index < iterations) {
                             return text[index];
+                            letter;
+                            
                         }
                         return letters[Math.floor(Math.random() * letters.length)];
                     }).join("");
