@@ -12,3 +12,5 @@ export const navItems = [
         sectionName: "contact-me-section"
     },
 ]
+
+const changes = "made some changes to my code."
