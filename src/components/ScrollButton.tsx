@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { colors } from '../constants';
 
 const ScrollButton = () => {
 

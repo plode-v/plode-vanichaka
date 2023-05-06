@@ -1,5 +1,4 @@
 import { useState } from "react"
-import { useNavigate } from "react-router-dom"
 
 import { navItems, colors } from '../constants'
 import { FiMenu } from "react-icons/fi"
