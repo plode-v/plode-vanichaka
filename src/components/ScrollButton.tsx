@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { colors } from '../constants';
 
 const ScrollButton = () => {
 
@@ -29,7 +30,7 @@ const ScrollButton = () => {
     return (
         <div>
             {visible && (
-                <button className='fixed bottom-5 right-5 border p-3 w-[64px] h-[64px] flex items-center justify-center rounded-full backdrop-blur-sm' onClick={scrollToTop}>Hello</button>
+                <button className={`fixed bottom-5 right-5 border p-3 w-[64px] h-[64px] flex items-center justify-center rounded-full backdrop-blur-sm duration-1001 hover:opacity-40`} onClick={scrollToTop}>Hello</button>
             )}
         </div>
     )

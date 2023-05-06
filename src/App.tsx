@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
-import { Navbar, ScrollButton } from "./components"
+
+import { Navbar, ScrollButton, Loading } from "./components"
 import { Home, AboutMe, Projects, ContactMe } from "./pages"
 
 function App() {
@@ -13,9 +14,7 @@ function App() {
 	return (
 		<>
 			{loading ? (
-				<div className="flex items-center justify-center">
-					<div><h1 className="text-[100px]">LOADING...</h1></div>
-				</div>
+				<Loading />
 			) : (
 				<div>
 					<Navbar />

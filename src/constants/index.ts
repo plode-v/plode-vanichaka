@@ -12,3 +12,9 @@ export const navItems = [
         sectionName: "contact-me-section"
     },
 ]
+
+export const colors = {
+    darkBlue: "#212A3E",
+    navyBlue: "#394867",
+    white: "#9BA4B5"
+}
