@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { Transition } from "@headlessui/react"
+import { useNavigate, Link } from "react-router-dom"
 
 import { navItems, colors } from '../constants'
 import { FiMenu } from "react-icons/fi"
@@ -51,11 +52,17 @@ const Navbar = () => {
         setIsOpen(!isOpen);
     };
 
+    // const backHome = () => {
+
+    // }
+
     return (
         <>
             <nav className={`bg-[${colors.darkBlue}] py-3 px-5 sm:py-4 sm:px-12 font-epilogue`}>
                 <div className="flex items-center justify-between">
-                    <h1 className={`text-[24px] sm:text-[32px] font-bold flex-1 cursor-default text-[${colors.white}]`}>Plode</h1>
+                    <Link to="/">
+                        <h1 className={`text-[24px] sm:text-[32px] font-bold flex-1 cursor-default text-[${colors.white}]`}>Plode</h1>
+                    </Link>
 
                     <div className="lg:hidden">
                         <button

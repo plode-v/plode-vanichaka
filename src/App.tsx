@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react"
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+
 
 import { Navbar, ScrollButton, Loading } from "./components"
 import { Home, AboutMe, Projects, ContactMe } from "./pages"
@@ -13,18 +15,22 @@ function App() {
 
 	return (
 		<>
-			{loading ? (
-				<Loading />
-			) : (
-				<div>
-					<Navbar />
-					<Home />
-					<AboutMe />
-					<Projects />
-					<ContactMe />
-					<ScrollButton />
-				</div>
-			)}
+			<Router>
+				{loading ? (
+					<Loading />
+				) : (
+					<div>
+						<Routes>
+							<Route path="/" element={<Navbar />} />
+						</Routes>
+						<Home />
+						<AboutMe />
+						<Projects />
+						<ContactMe />
+						<ScrollButton />
+					</div>
+				)}
+			</Router>
 		</>
 	)
 }
