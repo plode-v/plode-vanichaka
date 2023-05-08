@@ -28,7 +28,7 @@ const HackerEffect = ({ text, styles }:any) => {
     }, []);
 
   return (
-    <h1 className={styles} onMouseOver={effect}>{displayText}</h1>
+    <h1 className={styles} onClick={effect}>{displayText}</h1>
   )
 }
 

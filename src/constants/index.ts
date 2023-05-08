@@ -16,5 +16,6 @@ export const navItems = [
 export const colors = {
     darkBlue: "#212A3E",
     navyBlue: "#394867",
-    white: "#9BA4B5"
+    grey: "#9BA4B5",
+    white: "#F1F6F9"
 }
