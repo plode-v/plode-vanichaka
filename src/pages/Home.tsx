@@ -4,8 +4,8 @@ import { colors } from "../constants"
 const Home = () => {
 
     return (
-        <div className={`h-[500px] sm:h-[80vh] bg-[${colors.navyBlue}]`}>
-            <div className="flex flex-col justify-start cursor-default pt-[5vh] sm:pt-[10vh] md:pt-[20vh] pl-[5%]">
+        <div className={`h-[400px] sm:h-[80vh] bg-[${colors.navyBlue}]`}>
+            <div className="flex flex-col justify-start cursor-default pt-[10svh] sm:pt-[10vh] md:pt-[20vh] pl-[5%]">
                 <HackerEffect 
                     text="Plode"
                     styles="leading-[50px] md:leading-[90px] uppercase font-bold font-epilogue md:text-[80px] text-[40px] text-[#F1F6F9] tracking-wider w-min cursor-pointer"

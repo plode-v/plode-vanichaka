@@ -29,7 +29,7 @@ const ScrollButton = () => {
     return (
         <div>
             {visible && (
-                <button className={`fixed bottom-5 right-5 border p-3 w-[50px] h-[50px] sm:w-[64px] sm:h-[64px] flex items-center justify-center rounded-full backdrop-blur-sm duration-1001 hover:opacity-40`} onClick={scrollToTop}>Top</button>
+                <button className={`fixed bottom-5 right-5 border p-3 w-[50px] h-[50px] sm:w-[64px] sm:h-[64px] flex items-center justify-center rounded-full backdrop-blur-sm duration-100 focus:opacity-40`} onClick={scrollToTop}>Top</button>
             )}
         </div>
     )

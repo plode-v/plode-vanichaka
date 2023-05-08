@@ -1,6 +1,5 @@
 import { useState } from "react"
 import { Transition } from "@headlessui/react"
-import { useNavigate, Link } from "react-router-dom"
 
 import { navItems, colors } from '../constants'
 import { FiMenu } from "react-icons/fi"
@@ -46,23 +45,41 @@ import { FiMenu } from "react-icons/fi"
 // }
 
 const Navbar = () => {
+
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleNavbar = () => {
         setIsOpen(!isOpen);
     };
 
-    // const backHome = () => {
-
-    // }
-
     return (
         <>
+            <Transition
+                show={isOpen}
+                enter="transition ease-out duration-200 transform origin-top-right"
+                enterFrom="opacity-0 scale-95 translate-x-full"
+                enterTo="opacity-100 scale-100"
+                leave="transition ease-in duration-150 transform origin-top-right"
+                leaveFrom="opacity-100 scale-100"
+                leaveTo="opacity-0 scale-95 translate-x-full"
+            >
+                <div className="absolute top-0 right-0 h-screen bg-[#F1F6F9] pt-20 sm:hidden">
+                    <p className="text-black absolute top-2 right-4 font-epilogue text-[14px]" onClick={toggleNavbar}>close</p>
+                    {navItems.map((item, index) => (
+                        <a href={`#${item.sectionName}`} onClick={toggleNavbar} className="block py-1 px-8" key={index}>
+                            <div className="flex lg:hidden rounded-lg w-[55vw] py-2 h-max justify-center">
+                                <span className="font-medium text-black text-[20px]">{item.name}</span>
+                            </div>
+                        </a>
+                    ))}
+                </div>
+
+            </Transition>
             <nav className={`bg-[${colors.darkBlue}] py-3 px-5 sm:py-4 sm:px-12 font-epilogue`}>
                 <div className="flex items-center justify-between">
-                    <Link to="/">
-                        <h1 className={`text-[24px] sm:text-[32px] font-bold flex-1 cursor-default text-[${colors.white}]`}>Plode</h1>
-                    </Link>
+                        <h1 className={`text-[24px] sm:text-[32px] font-bold flex-1 cursor-default text-[${colors.white}]`}>
+                            <a href="/">Plode</a>
+                        </h1>
 
                     <div className="lg:hidden">
                         <button
@@ -76,31 +93,12 @@ const Navbar = () => {
 
                     {navItems.map((item, index) => (
                         <div className="hidden lg:flex font-epilogue font-semibold text-[18px] px-3" key={index}>
-                            <a href={`${item.sectionName}`} className={`hover:scale-105 duration-100 text-[${colors.white}]`}>{item.name}</a>
+                            <a href={`#${item.sectionName}`} className={`hover:opacity-50 duration-100 text-[${colors.white}]`}>{item.name}</a>
                         </div>
                     ))}
                 </div>
+ 
             </nav>
-            <Transition
-                    show={isOpen}
-                    enter="transition ease-out duration-200 transform origin-top-right"
-                    enterFrom="opacity-0 scale-95"
-                    enterTo="opacity-100 scale-100"
-                    leave="transition ease-in duration-150 transform origin-top-right"
-                    leaveFrom="opacity-100 scale-100"
-                    leaveTo="opacity-0 scale-95"
-                >
-                    <div className="absolute top-0 right-0">
-                        {navItems.map((item, index) => (
-                            <a href={`#${item.sectionName}`} onClick={toggleNavbar} className="block py-1 px-3" key={index}>
-                                <div className="z-10 flex lg:hidden bg-white rounded-lg shadow-lg w-[20vw] py-2 h-max justify-center">
-                                    <span className="font-medium text-black text-[12px]">{item.name}</span>
-                                </div>
-                            </a>
-                        ))}
-                    </div>
-
-                </Transition>
         </>
     )
 }
