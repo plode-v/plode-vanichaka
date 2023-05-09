@@ -23,7 +23,6 @@ function App() {
 					<AboutMe />
 					<Projects />
 					<ContactMe />
-					<ScrollButton />
 				</div>
 			)}
 		</>

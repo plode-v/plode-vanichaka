@@ -1,35 +1,33 @@
 import { useState } from 'react'
+import { FiLinkedin, FiGithub } from 'react-icons/fi';
+
+
+import { CustomButton } from '.';
 
 const ScrollButton = () => {
 
     const [visible, setVisible] = useState(false)
-    const [color, setColor] = useState("transparent");
 
     const toggleVisible = () => {
         const scrolled = document.documentElement.scrollTop;
         if (scrolled > 300) {
             setVisible(true);
-            setColor("red")
         }
         else if (scrolled <= 300) {
             setVisible(false);
-            setColor("transparent")
         }
     };
 
-    const scrollToTop = () => {
-        window.scrollTo({
-            top: 0
-        });
-        color;
-    };
 
     window.addEventListener("scroll",toggleVisible);
 
     return (
         <div>
             {visible && (
-                <button className={`fixed bottom-5 right-5 border p-3 w-[50px] h-[50px] sm:w-[64px] sm:h-[64px] flex items-center justify-center rounded-full backdrop-blur-sm duration-100 focus:opacity-40`} onClick={scrollToTop}>Top</button>
+                <div className='fixed flex flex-col bottom-1 px-2 items-center justify-center' onScroll={toggleVisible}>
+                    <CustomButton name={<FiLinkedin className="fill-white h-full w-full" />} alt="LinkedIn" styles="border my-2 p-3 w-[40px] h-[40px] rounded-full hover:opacity-50 text-[30px] flex" />
+                    <CustomButton name={<FiGithub className="h-full w-full fill-white" />} styles="border my-2 p-3 w-[40px] h-[40px] rounded-full hover:opacity-50" />
+                </div>
             )}
         </div>
     )

@@ -17,6 +17,10 @@ const Navbar = () => {
 		setIsOpen(!isOpen);
 	};
 
+	const handleResumeDownload = () => {
+		null
+	}
+
 	useEffect(() => {
 		const handleScroll = () => {
 			setScrollData(prevState => {
@@ -88,6 +92,9 @@ const Navbar = () => {
 							<a href={`#${item.sectionName}`} className="hover:opacity-50 duration-100 text-[#F1F6F9]">{item.name}</a>
 						</div>
 					))}
+					<div className="hidden lg:flex font-epilogue font-semibold text-[18px] px-3 items-center justify-center">
+						<button className="hover:scale-110 duration-100 text-[#F1F6F9] py-3 px-4 rounded-full bg-violet-400">Resume</button>
+					</div>
 				</div>
  
 			</nav>
