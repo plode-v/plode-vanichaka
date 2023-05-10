@@ -1,5 +1,9 @@
 export const navItems = [
     {
+        name: "Home",
+        sectionName: ""
+    },
+    {
         name: "About Me",
         sectionName: "about-me-section"
     },
