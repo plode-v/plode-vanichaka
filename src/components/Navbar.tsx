@@ -71,10 +71,10 @@ const Navbar = () => {
 				</div>
 
 			</Transition>
-			<nav className={`bg-[#212A3E] py-3 px-5 sm:py-4 sm:px-12 font-epilogue sticky top-0 transition-transform ease ${showNav && "-translate-y-full"}`}>
+			<nav className={`bg-[#0F4C75] py-3 px-5 sm:py-4 sm:px-12 font-epilogue sticky top-0 transition-transform ease ${showNav && "-translate-y-full"}`}>
 				<div className="flex items-center justify-between">
 						<h1 className="text-[24px] sm:text-[32px] font-bold flex-1 cursor-default text-#F1F6F9]">
-							<a href="/">Plode</a>
+							<a href="#">Plode</a>
 						</h1>
 
 					<div className="lg:hidden">
@@ -93,7 +93,7 @@ const Navbar = () => {
 						</div>
 					))}
 					<div className="hidden lg:flex font-epilogue font-semibold text-[18px] px-3 items-center justify-center">
-						<button className="hover:scale-110 duration-100 text-[#F1F6F9] py-3 px-4 rounded-full bg-violet-400">Resume</button>
+						<button className="hover:scale-110 duration-100 text-[#F1F6F9] py-3 px-4 rounded-full bg-[#3282B8]">Resume</button>
 					</div>
 				</div>
  

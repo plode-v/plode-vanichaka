@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 
 
-import { Navbar, Loading } from "./components"
+import { Navbar, Loading, Blob } from "./components"
 import { Home, AboutMe, Projects, ContactMe } from "./pages"
 
 function App() {
@@ -19,6 +19,7 @@ function App() {
 			) : (
 				<div>
 					<Navbar />
+					<Blob />
 					<Home />
 					<AboutMe />
 					<Projects />
