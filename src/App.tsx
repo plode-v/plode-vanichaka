@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 
 
-import { Navbar, ScrollButton, Loading } from "./components"
+import { Navbar, Loading } from "./components"
 import { Home, AboutMe, Projects, ContactMe } from "./pages"
 
 function App() {
