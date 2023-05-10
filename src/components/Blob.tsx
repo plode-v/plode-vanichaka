@@ -1,19 +1,18 @@
-import React, { useRef, useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 
 const Blob = () => {
 
     const blobRef = useRef(null);
 
     useEffect(() => {
-        const handleMouseMove = (e :any) => {
+        const handleMouseMove = (e) => {
             const blob = blobRef.current;
-            const mouseX = e.clientX;
-            const mouseY = e.clientY;
-            const blobWidth = blob.offsetWidth;
-            const blobHeight = blob.offsetHeight;
+            const { clientX, clientY } = e;
 
-            blob.style.transform = `translate(${mouseX - blobWidth / 2}px, ${mouseY - blobHeight / 2}px)`;
-        };
+            blob.style.left = `${clientX}px`;
+            blob.style.top = `${clientY}px`;
+        }
+
         document.addEventListener("mousemove", handleMouseMove);
 
         return () => {
@@ -22,7 +21,7 @@ const Blob = () => {
     }, []);
 
     return (
-        <div ref={blobRef} id='blob' />
+        <div id='blob' ref={blobRef} />
     )
 }
 

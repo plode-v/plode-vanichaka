@@ -19,11 +19,11 @@ function App() {
 			) : (
 				<div>
 					<Navbar />
-					<Blob />
 					<Home />
 					<AboutMe />
 					<Projects />
 					<ContactMe />
+					{/* <Blob /> */}
 				</div>
 			)}
 		</>
