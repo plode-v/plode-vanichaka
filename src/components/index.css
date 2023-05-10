@@ -1,0 +1,105 @@
+/**** SIDEBAR ****/
+
+.sidebar-container {
+    width: 50vw;
+    height: 100vh;
+    position: fixed;
+    padding-top: 15vh;
+    z-index: 2;
+}
+
+.sidebar-top-container {
+    background-color: transparent;
+    color: white;
+    text-align: left;
+    width: 100%;
+    padding: 0 20%;
+}
+
+.header-name {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #F1F6F9;
+    width: max-content;
+}
+
+.header-desc {
+    padding-bottom: 20px;
+    width: max-content;
+    font-size: 20px;
+    color: #F1F6F9;
+}
+
+.header-passion {
+    width: max-content;
+    color: #9BA4B5;
+}
+
+.sidebar-table-content {
+    padding: 80px 20% 0;
+}
+
+.sidebar-table-content-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: max-content;
+    color: #9BA4B5;
+}
+
+.sidebar-table-content-container:hover {
+    color: #F1F6F9;
+}
+
+.sidebar-table-content-line {
+    width: 30px;
+    background: #9BA4B5;
+    height: 2px;
+    margin-right: 10px;
+}
+
+.social-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    font-size: 24px;
+    padding: 0 20%;
+    height: 50vh;
+    width: 100%;
+}
+
+.social-icons {
+    cursor: pointer;
+    color: #9BA4B5;
+    transition-duration: 100ms;
+}
+
+.social-icons:hover {
+    color: #F1F6F9;
+    transition-duration: 100ms;
+}
+
+.linkedin-icon {
+    background-color:#9BA4B5;
+    border-radius: 3px;
+    padding: 1.2px;
+    cursor: pointer;
+    color: #1B262c;
+    transition-duration: 100ms;
+}
+
+.linkedin-icon:hover {
+    background-color: #F1F6F9;
+    transition-duration: 100ms;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}

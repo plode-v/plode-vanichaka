@@ -1,25 +1,32 @@
+import { FiGithub, FiMail, FiLinkedin, FiFileText } from "react-icons/fi"
+
 import { navItems } from '../constants'
+import "./index.css"
 
 const Sidebar = () => {
+
     return (
-        <div className='w-1/2 h-screen fixed pt-[15vh] hidden sm:block'>
-            <div className='bg-transparent text-white text-left w-full px-[10%]'>
-                <h1 className='text-[50px] font-bold leading-auto w-max leading-[40px]'>Plode Vanichaka</h1>
-                <h4 className='pb-[20px] w-max text-[24px]'>Web3 & Full-Stack Developer</h4>
-                <p className='w-max'>Building the future of the web with passion and technology.</p>
+        <div className='hidden sm:block sidebar-container'>
+            <div className='sidebar-top-container'>
+                <h1 className='header-name'>Plode Vanichaka</h1>
+                <h4 className='header-desc'>Web3 & Full-Stack Developer</h4>
+                <p className='header-passion'>Building the future of the web with passion and technology.</p>
             </div>
-            <div className='pt-20 px-[10%]'>
+            <div className='sidebar-table-content'>
                 {navItems.map((item, index) => (
-                    <div className='flex items-center cursor-pointer w-max' key={index}>
-                        <div className='w-[30px] bg-white h-[2px] mr-[10px]' />
+                    <div className='sidebar-table-content-container' key={index}>
+                        <div className='sidebar-table-content-line' />
                         <li className='list-none'>
                             {item.name}
                         </li>
                     </div>
                 ))}
             </div>
-            <div className='h-max'>
-                Logo
+            <div className='social-container'>
+                <FiGithub className="social-icons" />
+                <FiLinkedin className="linkedin-icon" />
+                <FiMail className="social-icons" />
+                <FiFileText className="social-icons" />
             </div>
         </div>
   )
