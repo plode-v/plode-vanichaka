@@ -10,7 +10,7 @@ interface ProjectProps {
 
 const Project = ({name, desc, image, techStack, link}: ProjectProps) => {
     return (
-        <section className="my-5 border h-max duration-100 rounded-[10px] z-20">
+        <section className="my-5 border h-max duration-100 rounded-[10px] z-20 3xl:w-1/2 3xl:mx-2">
             <div className="flex justify-start flex-wrap object-contain flex-col">
                 <img src={image} alt="thumbnail" className="w-full aspect-[3/2] border cursor-pointer rounded-t-[10px]" />
                 <h4 className="font-[700] text-[1.5rem] pl-5 cursor-pointer pt-5"><a href={link}>{name}</a></h4>

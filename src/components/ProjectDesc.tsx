@@ -16,7 +16,7 @@ const Project = ({text}: ProjectProps) => {
         if (showFullText) {
             return text;
         } else {
-            return text.slice(0, 200);
+            return text.slice(0, 200) + "...";
         }
     };
 
