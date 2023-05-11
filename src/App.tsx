@@ -4,7 +4,7 @@ import { Home, Projects } from "./pages"
 function App() {
 	return (
 		<div className="hidden lg:flex justify-center">
-			<div className="hidden md:flex w-2/3">
+			<div className="hidden md:flex w-2/3 3xl:w-1/2">
 				<Navbar />
 				<Sidebar />
 				<div className="flex flex-col w-full">

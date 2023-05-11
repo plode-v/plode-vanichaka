@@ -10,6 +10,9 @@ export default {
     extend: {
       fontFamily: {
         "epilogue": ["Epilogue", "sans-serif"]
+      },
+      screens: {
+        '3xl': '2500px',
       }
     },
   },
