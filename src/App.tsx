@@ -1,13 +1,17 @@
-import { Sidebar, Blob } from "./components"
-import { Home } from "./pages"
+import { Sidebar, Blob, Navbar } from "./components"
+import { Home, Projects } from "./pages"
 
 function App() {
 	return (
-		<div className="flex items-center justify-center">
-			<div className="hidden md:flex w-3/4 xl:w-1/2 lg:w-[90%]">
+		<div className="flex justify-center">
+			<div className="hidden md:flex w-3/4 xl:w-2/3 lg:w-[90%]">
+				<Navbar />
 				<Sidebar />
-				<Home />
-				<Blob />
+				<div className="flex flex-col w-full">
+					<Home />
+					<Projects />
+					<Blob />
+				</div>
 			</div>
 		</div>
 	)

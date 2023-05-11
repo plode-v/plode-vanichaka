@@ -1,11 +1,11 @@
 import { Highlight } from "../components"
 
+import { navItems } from "../constants"
+
 const Home = () => {
     return (
-        <div className="w-screen flex flex-row">
-            <div className="hidden sm:flex flex-1" />
-
-            <section className="flex-1 h-screen text-[#9BA4B5] text-[14px]">
+        <div className="w-full flex">
+            <section className="h-screen text-[#9BA4B5] text-[14px] lg:text-[18px]" id={navItems[0].sectionName}>
                 <p className="px-10 pt-[15vh] mb-5">
                     Hello, I'm Plode Vanichaka, a Thai-American based in Bangkok, Thailand. I'm a passionate developer with a focus on <Highlight word="web3 development"/>, <Highlight word="front-end development" />, and all things related to <Highlight word="programming" />.
                 </p>
