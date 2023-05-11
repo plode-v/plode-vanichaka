@@ -25,24 +25,13 @@ export const colors = {
 export const projects = [
     {
         name: "ETH DEX",
-        desc: "One page Ethereum decentralized exchange. Utilize web3 module, ReactTS, Ganache, Truffle, And Moralis.",
-        techStack: [
-            {
-                name: "eth",
-                image: "replace with tech-stack svg icon"
-            },
-            {
-                name: "ReactTS",
-                image: "replace with tech-stack svg icon"
-            }
-        ],
+        desc: "One page Ethereum decentralized exchange. Utilize web3 module, ReactTS, Ganache, Truffle, And Moralis. lkashdfl;kiashdfpoiahwepoinaslkdjnpasioeuufakjsdnpqiwefp[9qw45-poinsd; iojhpowijrp ;siof hi13oi1jasdfawefawevawer2rubkjewblrtpu8hfiusdhfpaseiorthfposiadhfgasiohfpoaishfpoasidfhpasioudfhpasiudhfl;kajshfalskdjh2lnpiowe poiwjerp[092",
+        techStack: ["React", "Moralis", "Web3", "Truffle", "Mocha", "Ganache"],
         image: "replace with app screen shot and maybe add a feature of clickable thumbnail."
     },
     {
         name: "Wellness Supplements",
         desc: "MERN Full-Stack online store including Auth0, seller dashboard, Stripe checkout.",
-        techStack: {
-
-        }
+        techStack: ["React", "Auth0", "ExpressJS", "Mongoose", "Stripe API"]
     }
 ]

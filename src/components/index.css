@@ -6,6 +6,7 @@
 
 .social-icons:hover {
     color: #F1F6F9;
+    translate: 0 -5px;
     transition-duration: 100ms;
 }
 
@@ -21,4 +22,6 @@
 .linkedin-icon:hover {
     background-color: #F1F6F9;
     transition-duration: 100ms;
+    translate: 0 -5px;
+
 }
