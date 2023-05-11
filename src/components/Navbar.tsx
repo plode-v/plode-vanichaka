@@ -7,7 +7,7 @@ const Navbar = () => {
 	return (
 		<nav className="h-full bg-transparent text-[#f1f6f9] pt-[15vh] fixed flex flex-col w-1/3">
 			<div className="pl-[25%] items-start">
-				<h1 className="3xl:text-[56px] text-[50px] font-[700] leading-tight">Plode Vanichaka</h1>
+				<h1 className="3xl:text-[56px] text-[50px] font-[700] leading-tight"><a href="">Plode Vanichaka</a></h1>
 				<h4 className="pb-[20px] text-[20px] text-[#f1f6f9]">Web3 & Full-Stack Developer</h4>
 				<p className="text-[#9ba4b5]">Building the future of the web with passion and technology</p>
 			</div>
