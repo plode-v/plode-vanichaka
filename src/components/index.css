@@ -1,0 +1,27 @@
+.social-icons {
+    cursor: pointer;
+    color: #9BA4B5;
+    transition-duration: 100ms;
+}
+
+.social-icons:hover {
+    color: #F1F6F9;
+    translate: 0 -5px;
+    transition-duration: 100ms;
+}
+
+.linkedin-icon {
+    background-color:#9BA4B5;
+    border-radius: 3px;
+    padding: 1.2px;
+    cursor: pointer;
+    color: #1B262c;
+    transition-duration: 100ms;
+}
+
+.linkedin-icon:hover {
+    background-color: #F1F6F9;
+    transition-duration: 100ms;
+    translate: 0 -5px;
+
+}

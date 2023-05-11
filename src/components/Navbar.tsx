@@ -1,8 +1,7 @@
-import { useState, useEffect } from "react"
-import { Transition } from "@headlessui/react"
+import { FiGithub, FiMail, FiLinkedin, FiFileText } from "react-icons/fi"
 
 import { navItems } from '../constants'
-import { FiMenu } from "react-icons/fi"
+import "./index.css"
 
 const Navbar = () => {
 
@@ -71,7 +70,7 @@ const Navbar = () => {
 				</div>
 
 			</Transition>
-			<nav className={`z-10 bg-[#0F4C75] py-3 px-5 sm:py-4 sm:px-12 font-epilogue sticky top-0 transition-transform ease ${showNav && "-translate-y-full"}`}>
+			<nav className={`bg-[#0F4C75] py-3 px-5 sm:py-4 sm:px-12 font-epilogue sticky top-0 transition-transform ease ${showNav && "-translate-y-full"}`}>
 				<div className="flex items-center justify-between">
 						<h1 className="text-[24px] sm:text-[32px] font-bold flex-1 cursor-default text-#F1F6F9]">
 							<a href="#">Plode</a>

@@ -1,32 +1,19 @@
-import { useEffect, useState } from "react"
-
-
-import { Navbar, Loading, Blob } from "./components"
-import { Home, AboutMe, Projects, ContactMe } from "./pages"
+import { Sidebar, Blob, Navbar } from "./components"
+import { Home, Projects } from "./pages"
 
 function App() {
-
-	const [loading, setLoading] = useState(true);
-
-	useEffect(() => {
-		setInterval(() => {setLoading(false)}, 1000)
-	}, [loading]);
-
 	return (
-		<>
-			{loading ? (
-				<Loading />
-			) : (
-				<div>
-					<Navbar />
+		<div className="hidden lg:flex justify-center">
+			<div className="hidden md:flex w-2/3 3xl:w-1/2">
+				<Navbar />
+				<Sidebar />
+				<div className="flex flex-col w-full">
 					<Home />
-					<AboutMe />
 					<Projects />
-					<ContactMe />
-					{/* <Blob /> */}
+					<Blob />
 				</div>
-			)}
-		</>
+			</div>
+		</div>
 	)
 }
 

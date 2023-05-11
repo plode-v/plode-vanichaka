@@ -1,27 +1,32 @@
-import React, { useEffect, useRef } from 'react'
+import { useState, useEffect } from 'react'
 
 const Blob = () => {
+    const [mousePosition, setMousePosition] = useState({
+        x: 0,
+        y: 0
+    });
 
-    const blobRef = useRef(null);
+    const handleMouseMove = (event: MouseEvent) => {
+        setMousePosition({
+            x: event.clientX,
+            y: event.clientY
+        });
+    };
 
     useEffect(() => {
-        const handleMouseMove = (e) => {
-            const blob = blobRef.current;
-            const { clientX, clientY } = e;
-
-            blob.style.left = `${clientX}px`;
-            blob.style.top = `${clientY}px`;
-        }
-
-        document.addEventListener("mousemove", handleMouseMove);
+        window.addEventListener("mousemove", handleMouseMove);
 
         return () => {
-            document.removeEventListener("mousemove", handleMouseMove);
+            window.removeEventListener("mousemove", handleMouseMove);
         }
     }, []);
 
     return (
-        <div id='blob' ref={blobRef} />
+        <div 
+            id='blob'
+            className='fixed w-[400px] h-[400px] rounded-full pointer-events-none z-90 -translate-x-1/2 -translate-y-1/2 opacity-30 ease shadow-md bg-gradient-to-t from-cyan-500 to-violet-500 blur-[150px]'
+            style={{left: mousePosition.x, top: mousePosition.y}}
+        />
     )
 }
 

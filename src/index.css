@@ -1,36 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap');
 @tailwind base;
-html {
-    scroll-behavior: smooth;
-}
 @tailwind components;
 @tailwind utilities;
 
-
-#blob {
-    height: 300px;
-    aspect-ratio: 1;
-    z-index: 0;
-    background-color: white;
-    border-radius: 50%;
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    translate: -50% -50%;
-    filter: blur(200px);
-    background: linear-gradient(
-        to top right,
-        cyan,
-        violet
-    );
-    animation: 20s rotate infinite
-}
-
-@keyframes rotate {
-    from {
-        transform: rotate(0deg)
-    }
-    to {
-        transform: rotate(360deg)
-    }
+html {
+    scroll-behavior: smooth;
 }
