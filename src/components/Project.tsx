@@ -6,6 +6,7 @@ const Project = ({name, desc, image, techStack, index}: any) => {
             <div className="flex items-center justify-start flex-wrap">
                 <img src={image} alt="thumbnail" className="w-[200px] aspect-[3/2] border" />
                 <h4 className="font-[700] text-[1.5rem] pl-5">{name}</h4>
+                <p>{techStack}</p>
             </div>
             <ProjectDesc 
                 text={desc}
