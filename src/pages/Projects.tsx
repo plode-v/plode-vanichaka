@@ -1,12 +1,17 @@
 import { Project } from "../components"
-import { navItems, projects } from "../constants"
+import { projects } from "../constants"
 
 const Projects = () => {
+
     return (
-        <div className="w-full border flex px-10">
-            <section className="flex">
-                <p>kasldkfh;aoisdf ;ksadjf; lasd;lfjaspoeijf paowisejhfpoaisdjf poaisehjfp oaisdf;la isep[oaiejwf poaisdf ;laksdf ;laisjf ;oasidj fpoasidjfif a;sodi fa;osdfj;aosidfj;laksj df;lkas jdf;lkja sd;lfkj asoiasdjfpoiawefp oiawepfoia sjdpfoi pweohf pasiodfn;aosdfpoiashepfoijase ;flkas;dlifjaspeoiap osidf;oasidhf pasod</p>
-            </section>
+        <div className="w-full flex flex-col px-10 h-screen" id="projects-section">
+            {projects.map((item, index) => (
+                <Project 
+                    key={index}
+                    name={item.name}
+                    desc={item.desc}
+                />
+            ))}
         </div>
     )
 }

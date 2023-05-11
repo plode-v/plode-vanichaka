@@ -25,7 +25,7 @@ export const colors = {
 export const projects = [
     {
         name: "ETH DEX",
-        desc: "One page Ethereum decentralized exchange. Utilize web3 module, ReactTS, Ganache, Truffle, And Moralis. lkashdfl;kiashdfpoiahwepoinaslkdjnpasioeuufakjsdnpqiwefp[9qw45-poinsd; iojhpowijrp ;siof hi13oi1jasdfawefawevawer2rubkjewblrtpu8hfiusdhfpaseiorthfposiadhfgasiohfpoaishfpoasidfhpasioudfhpasiudhfl;kajshfalskdjh2lnpiowe poiwjerp[092",
+        desc: "oia;lksdfj ;loasjdf;loiajs;dlij;Hello, I'm Plode Vanichaka, a Thai-American based in Bangkok, Thailand. I'm a passionate developer with a focus on web3 development, front-end development, and all things related to programming As an American citizen, I want to emphasize that I am open to remote work opportunities and comfortable adjusting my work hours to align with the employets time zone. With no visa or permit requirement, I offer employers the convenience and flexibility to collaborate seamlessly across borders.My journey as a programmer began in October 2022, where I embarked on a self-taught path after completing my studies as an art student. It was during this time that I discovered my true passion for programming and its endless creativity possibilities.I am dedicated to continuously learning and delivering high-quality solutions, and Im excited about the opportunity to contribute my skills to meaningful projects.",
         techStack: ["React", "Moralis", "Web3", "Truffle", "Mocha", "Ganache"],
         image: "replace with app screen shot and maybe add a feature of clickable thumbnail."
     },

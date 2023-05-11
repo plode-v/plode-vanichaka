@@ -1,10 +1,16 @@
-const Project = ({image, desc, name, techStack}: any) => {
+import { ProjectDesc } from "."
+
+const Project = ({name, desc, image, techStack, index}: any) => {
     return (
-        <div className="border">
-            <div>
-                <img src={image} alt="thumbnail" className="h-[150px] aspect-[3/2]" />
+        <section className="my-5 border h-max duration-100" key={index}>
+            <div className="flex items-center justify-start flex-wrap">
+                <img src={image} alt="thumbnail" className="w-[200px] aspect-[3/2] border" />
+                <h4 className="font-[700] text-[1.5rem] pl-5">{name}</h4>
             </div>
-        </div>
+            <ProjectDesc 
+                text={desc}
+            />
+        </section>
     )
 }
 
