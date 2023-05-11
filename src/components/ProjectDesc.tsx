@@ -1,6 +1,10 @@
 import { useState } from "react";
 
-const Project = ({text}: any) => {
+interface ProjectProps {
+    text: string;
+}
+
+const Project = ({text}: ProjectProps) => {
     
     const [showFullText, setShowFullText] = useState(false);
 

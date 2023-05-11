@@ -10,6 +10,9 @@ const Projects = () => {
                     key={index}
                     name={item.name}
                     desc={item.desc}
+                    image={item.image}
+                    techStack={item.techStack}
+                    link={item.link}
                 />
             ))}
         </div>
