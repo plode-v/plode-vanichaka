@@ -8,7 +8,7 @@ const Navbar = () => {
 		<nav className="lg:h-full bg-transparent text-[#f1f6f9] pt-[5vh] lg:pt-[15vh] lg:fixed flex flex-col lg:w-1/3 w-screen">
 			<div className="lg:pl-[25%] items-start">
 				<h1 className="3xl:text-[56px] lg:text-[50px] text-[30px] font-[700] leading-tight"><a href="/">Plode Vanichaka</a></h1>
-				<h4 className="pb-[20px] text-[20px] text-[#f1f6f9]">Web3 & Full-Stack Developer</h4>
+				<h4 className="lg:pb-[20px] text-[20px] text-[#f1f6f9]">Web3 & Full-Stack Developer</h4>
 				<p className="text-[#9ba4b5] text-[12px] lg:text-[16px]">Building the future of the web with passion and technology</p>
 			</div>
 			<div className="pt-[80px] lg:pl-[25%] hidden lg:block">
