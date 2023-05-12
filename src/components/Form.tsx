@@ -9,13 +9,10 @@ const Form = () => {
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
 
-    const service = import.meta.env.VITE_SERVICE_ID;
-    const template = import.meta.env.VITE_TEMPLATE_ID;
-
     const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
-        emailjs.sendForm(service, template, form.current, "csr-uObou_1tQeqDL")
+        emailjs.sendForm("service_nudy0y9", "template_lbowm08", form.current, "csr-uObou_1tQeqDL")
         .then((result) => {
             console.log(result.text);
         }, (error) => {
