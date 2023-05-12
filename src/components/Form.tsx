@@ -7,7 +7,6 @@ const Form = () => {
 
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
-    const [title, setTitle] = useState("");
     const [message, setMessage] = useState("");
 
     const publicId = import.meta.env.VITE_PUBLIC_KEY;
@@ -26,7 +25,6 @@ const Form = () => {
 
         setName("");
         setEmail("");
-        setTitle("");
         setMessage("");
     } 
 
