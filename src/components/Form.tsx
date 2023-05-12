@@ -9,14 +9,13 @@ const Form = () => {
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
 
-    const publicId = import.meta.env.VITE_PUBLIC_KEY;
     const service = import.meta.env.VITE_SERVICE_ID;
     const template = import.meta.env.VITE_TEMPLATE_ID;
 
     const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
-        emailjs.sendForm(service, template, form.current,publicId)
+        emailjs.sendForm(service, template, form.current, "csr-uObou_1tQeqDL")
         .then((result) => {
             console.log(result.text);
         }, (error) => {
