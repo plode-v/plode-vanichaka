@@ -1,5 +1,6 @@
 import { Sidebar, Blob, Navbar } from "./components"
 import { Home, Projects } from "./pages"
+import Contact from "./pages/Contact"
 
 function App() {
 	return (
@@ -10,6 +11,7 @@ function App() {
 				<div className="flex flex-col w-full items-center">
 					<Home />
 					<Projects />
+					<Contact />
 					<Blob />
 				</div>
 			</div>

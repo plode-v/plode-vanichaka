@@ -1,3 +1,4 @@
+/* NAVBAR ICONS */
 .social-icons {
     cursor: pointer;
     color: #9BA4B5;
@@ -24,4 +25,24 @@
     transition-duration: 100ms;
     translate: 0 -5px;
 
+}
+
+/* FORM */
+.input-fields {
+    width: 100%;
+    background-color: #121212;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    color: #9ba4b5;
+    font-weight: 200;
+    padding: 4px;
+    box-shadow: 2px white ;
+}
+
+.input-fields:focus {
+    outline: none;
+}
+
+.form-label {
+    color: #9BA4B5;
 }
