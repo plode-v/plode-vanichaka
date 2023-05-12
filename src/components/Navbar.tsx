@@ -5,13 +5,13 @@ import "./index.css"
 
 const Navbar = () => {
 	return (
-		<nav className="h-full bg-transparent text-[#f1f6f9] pt-[15vh] fixed flex flex-col w-1/3">
-			<div className="pl-[25%] items-start">
-				<h1 className="3xl:text-[56px] text-[50px] font-[700] leading-tight"><a href="/">Plode Vanichaka</a></h1>
+		<nav className="lg:h-full bg-transparent text-[#f1f6f9] pt-[5vh] lg:pt-[15vh] lg:fixed flex flex-col lg:w-1/3 w-screen">
+			<div className="lg:pl-[25%] items-start">
+				<h1 className="3xl:text-[56px] lg:text-[50px] text-[30px] font-[700] leading-tight"><a href="/">Plode Vanichaka</a></h1>
 				<h4 className="pb-[20px] text-[20px] text-[#f1f6f9]">Web3 & Full-Stack Developer</h4>
-				<p className="text-[#9ba4b5]">Building the future of the web with passion and technology</p>
+				<p className="text-[#9ba4b5] text-[12px] lg:text-[16px]">Building the future of the web with passion and technology</p>
 			</div>
-			<div className="pt-[80px] pl-[25%]">
+			<div className="pt-[80px] lg:pl-[25%] hidden lg:block">
 				{navItems.map((item, index) => (
 					<div className="flex items-center cursor-pointer w-max text-[#9ba4b5] hover:text-[#f1f6f9] hover:translate-x-5 duration-150" key={index}>
 						<div className="w-[30px] bg-[#9ba4b5] h-[2px] mr-[10px]" />
@@ -21,7 +21,7 @@ const Navbar = () => {
 					</div>
 				))}
 			</div>
-			<div className="flex items-center justify-start gap-6 text-[32px] h-[50vh] w-full pl-[25%]">
+			<div className="flex items-center justify-start gap-3 lg:gap-6 lg:text-[32px] text-[20px] lg:h-[50vh] h-[5vh] w-full lg:pl-[25%]">
 				<a href="https://www.github.com/plode-v" target="_blank">
 					<FiGithub className="social-icons" />
 				</a>
