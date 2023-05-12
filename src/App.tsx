@@ -1,5 +1,5 @@
 import { Sidebar, Blob, Navbar } from "./components"
-import { Home, Projects } from "./pages"
+import { Footer, Home, Projects } from "./pages"
 import Contact from "./pages/Contact"
 
 function App() {
@@ -12,6 +12,7 @@ function App() {
 					<Home />
 					<Projects />
 					<Contact />
+					<Footer />
 					<Blob />
 				</div>
 			</div>
