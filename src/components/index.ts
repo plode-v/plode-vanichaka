@@ -5,3 +5,4 @@ export { default as Navbar } from "./Navbar"
 export { default as ProjectDesc } from "./ProjectDesc"
 export { default as Project } from "./Project"
 export { default as Form } from "./Form";
+export { default as AnimatedPage } from "./AnimatedPage";
