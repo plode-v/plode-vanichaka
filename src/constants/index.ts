@@ -22,6 +22,39 @@ export const colors = {
     grey: "#9BA4B5",
 }
 
+export const motionContainer = {
+    hidden: {
+        opacity: 0,
+        y: -100
+    },
+    show: {
+        opacity: 1,
+        y: 0,
+        transition: {
+            duration: 0.2
+        }
+    }
+}
+
+export const motionItem = {
+    hidden: {
+        opacity: 0,
+        y: -100,
+        transition: {
+            duration: 0.2
+        }
+    },
+    show: {
+        opacity: 1,
+        y: 0,
+        transition: {
+            duration: 0.4,
+            staggerChildren: 0.1,
+            delayChildren: 0.1
+        }
+    }
+}
+
 export const projects = [
     {
         name: "ETH DEX",

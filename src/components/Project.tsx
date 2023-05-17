@@ -1,5 +1,6 @@
 import { ProjectDesc } from "."
 
+
 interface ProjectProps {
     name: string;
     desc: string;

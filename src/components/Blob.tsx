@@ -22,7 +22,7 @@ const Blob = () => {
     }, []);
 
     return (
-        <div 
+        <div
             id='blob'
             className='fixed w-[400px] h-[400px] rounded-full pointer-events-none z-10 -translate-x-1/2 -translate-y-1/2 opacity-30 ease shadow-md bg-gradient-to-t from-cyan-500 to-violet-500 blur-[150px]'
             style={{left: mousePosition.x, top: mousePosition.y}}

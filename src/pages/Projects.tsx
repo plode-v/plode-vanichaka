@@ -1,10 +1,11 @@
 import { Project } from "../components"
 import { projects } from "../constants"
+import { motion } from "framer-motion"
 
-const Projects = () => {
+const Projects = (props: any) => {
 
     return (
-        <div className="w-full grid grid-cols-1 3xl:grid-cols-2 gap-4 lg:px-10 md:grid-cols-2 lg:grid-cols-1" id="projects-section">
+        <motion.div variants={props.variants} className="w-full grid grid-cols-1 3xl:grid-cols-2 gap-4 lg:px-10 md:grid-cols-2 lg:grid-cols-1" id="projects-section">
             <h1 className="uppercase text-[14px] lg:text-[18px] font-[700] h-min absolute">Projects</h1>
             {projects.map((item, index) => (
                 <Project 
@@ -16,7 +17,7 @@ const Projects = () => {
                     link={item.link}
                 />
             ))}
-        </div>
+        </motion.div>
     )
 }
 

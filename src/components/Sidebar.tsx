@@ -1,8 +1,18 @@
+import { motion } from "framer-motion"
 const Sidebar = () => {
 
     return (
-        <nav className='w-full'>
-        </nav>
+        <motion.nav variants={{
+          hidden: {
+            opacity: 1,
+            y:-100
+          },
+          show: {
+            y: 0,
+            transition: {duration: 0}
+          }
+        }} className='w-full'>
+        </motion.nav>
   )
 }
 

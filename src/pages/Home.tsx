@@ -1,9 +1,10 @@
-import { Highlight, AnimatedPage } from "../components"
+import { Highlight } from "../components"
 import { navItems } from "../constants"
+import { motion } from "framer-motion"
 
-const Home = () => {
+const Home = (props: any) => {
     return (
-            <div className="w-full flex justify-center">
+            <motion.div variants={props.variants} className="w-full flex justify-center">
                 <section className="h-max text-[#9BA4B5] text-[14px] lg:text-[18px]" id={navItems[0].sectionName}>
                     <p className="lg:px-10 lg:pt-[15vh] pt-[5vh] mb-5">
                         Hello, I'm Plode Vanichaka, a Thai-American based in Bangkok, Thailand. I'm a passionate developer with a focus on <Highlight word="web3 development"/>, <Highlight word="front-end development" />, and <Highlight word="various other areas in programming in technology" />.
@@ -18,7 +19,7 @@ const Home = () => {
                         I am dedicated to continuously learning and delivering <Highlight word="high-quality" /> solutions, and I'm excited and eager about the opportunity to utilize my skills to contribute to <Highlight word="meaningful projects" />.
                     </p>
                 </section>
-            </div>
+            </motion.div>
     )
 }
 
