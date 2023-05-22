@@ -62,7 +62,7 @@ export const projects = [
         desc: "Calories tracker application for users to be able to track their daily meals and meet there fitness goals. This application is currently under-development. It was inspired by popular application called Myfitnesspal, which is currently number 1 user's choice for trakcing calories and overall healthy habits.",
         techStack: ["React", "Express", "Mongoose", "MongoDB"],
         image: easyFit,
-        link: "https://easyfit-iota.vercel.app"
+        link: "https://easyfit-sepia.vercel.app"
     },
     {
         name: "Wellness Supplements",
