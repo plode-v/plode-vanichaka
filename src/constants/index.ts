@@ -59,8 +59,8 @@ export const motionItem = {
 export const projects = [
     {
         name: "EasyFit",
-        desc: "Hello, I'm Plode Vanichaka, a Thai-American based in Bangkok, Thailand. I'm a passionate developer with a focus on web3 development, front-end development, and all things related to programming As an American citizen, I want to emphasize that I am open to remote work opportunities and comfortable adjusting my work hours to align with the employets time zone. With no visa or permit requirement",
-        techStack: ["React", "Express", ""],
+        desc: "Calories tracker application for users to be able to track their daily meals and meet there fitness goals. This application is currently under-development. It was inspired by popular application called Myfitnesspal, which is currently number 1 user's choice for trakcing calories and overall healthy habits.",
+        techStack: ["React", "Express", "Mongoose", "MongoDB"],
         image: easyFit,
         link: "https://easyfit-iota.vercel.app"
     },
