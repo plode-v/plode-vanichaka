@@ -1,0 +1,1 @@
+export { default as easyFit } from "./easy-fit-screenshot.png" 

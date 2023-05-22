@@ -14,12 +14,12 @@ const Navbar = () => {
 			</div>
 			<div className="pt-[80px] lg:pl-[25%] hidden lg:block">
 				{navItems.map((item, index) => (
-					<motion.div variants={motionItem} className="flex items-center cursor-pointer w-max text-[#9ba4b5] hover:text-[#f1f6f9] hover:translate-x-5 duration-150" key={index}>
+					<div className="flex items-center cursor-pointer w-max text-[#9ba4b5] hover:text-[#f1f6f9] duration-150 hover:translate-x-3" key={index}>
 						<div className="w-[30px] bg-[#9ba4b5] h-[2px] mr-[10px]" />
 						<li className="list-none text-[18px]">
 							<a href={`#${item.sectionName}`}>{item.name}</a>
 						</li>
-					</motion.div>
+					</div>
 				))}
 			</div>
 			<motion.div className="flex items-center justify-start gap-3 lg:gap-6 lg:text-[32px] text-[20px] lg:h-[50vh] h-[5vh] w-full lg:pl-[25%]">
