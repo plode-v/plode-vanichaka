@@ -59,7 +59,7 @@ export const motionItem = {
 export const projects = [
     {
         name: "EasyFit",
-        desc: "Calories tracker application for users to be able to track their daily meals and meet there fitness goals. This application is currently under-development. It was inspired by popular application called Myfitnesspal, which is currently number 1 user's choice for trakcing calories and overall healthy habits.",
+        desc: "EasyFit is a web-application for tracking daily calorie intake and achieving fitness goals. Built with React and ExpressJS, offers a seamless and intuitive experience. With EasyFit, you can effortlessly log your meals, monitor your calorie consumption, and make informed choices about your diet. The secure authentication system ensures that your data remains private and accessible only to you. Powered by MongoDB, EasyFit ensures efficient data management and scalability. Stay on track with your fitness journey with EasyFit's upcoming mobile application, which will provide the same convenience and functionality on-the-go.",
         techStack: ["React", "Express", "Mongoose", "MongoDB"],
         image: easyFit,
         link: "https://easyfit-sepia.vercel.app"
