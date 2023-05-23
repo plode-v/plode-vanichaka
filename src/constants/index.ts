@@ -72,3 +72,10 @@ export const projects = [
         link: "replace with deployed link",
     }
 ]
+
+export const documentation = [
+    {
+        name: "EasyFit",
+        techStack: ""
+    }
+]
