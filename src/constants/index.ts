@@ -59,17 +59,10 @@ export const motionItem = {
 export const projects = [
     {
         name: "EasyFit",
-        desc: "EasyFit is a web-application for tracking daily calorie intake and achieving fitness goals. Built with React and ExpressJS, offers a seamless and intuitive experience. With EasyFit, you can effortlessly log your meals, monitor your calorie consumption, and make informed choices about your diet. The secure authentication system ensures that your data remains private and accessible only to you. Powered by MongoDB, EasyFit ensures efficient data management and scalability. Stay on track with your fitness journey with EasyFit's upcoming mobile application, which will provide the same convenience and functionality on-the-go.",
+        desc: "EasyFit is a web-application for tracking daily calorie intake and achieving fitness goals. Built with React and ExpressJS, offers a seamless and intuitive experience. 'This is still under the development'. With EasyFit, you can effortlessly log your meals, monitor your calorie consumption, and make informed choices about your diet. The secure authentication system ensures that your data remains private and accessible only to you. Powered by MongoDB, EasyFit ensures efficient data management and scalability. Stay on track with your fitness journey with EasyFit's upcoming mobile application, which will provide the same convenience and functionality on-the-go.",
         techStack: ["React", "Express", "Mongoose", "MongoDB"],
         image: easyFit,
         link: "https://easyfit-sepia.vercel.app"
-    },
-    {
-        name: "Wellness Supplements",
-        desc: "Hello, I'm Plode Vanichaka, a Thai-American based in Bangkok, Thailand. I'm a passionate developer with a focus on web3 development, front-end development, and all things related to programming As an American citizen, I want to emphasize that I am open to remote work opportunities and comfortable adjusting my work hours to align with the employets time zone. With no visa or permit requirement, I offer employers the convenience and flexibility to collaborate seamlessly across borders.My journey as a programmer began in October 2022, where I embarked on a self-taught path after completing my studies as an art student. It was during this time that I discovered my true passion for programming and its endless creativity possibilities.I am dedicated to continuously learning and delivering high-quality solutions, and Im excited about the opportunity to contribute my skills to meaningful projects.",
-        techStack: ["React", "Auth0", "ExpressJS", "Mongoose", "Stripe API"],
-        image: "https://img.freepik.com/free-psd/landing-page-online-fashion-sale_23-2148585401.jpg",
-        link: "replace with deployed link",
     }
 ]
 
