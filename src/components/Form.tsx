@@ -3,7 +3,7 @@ import emailjs from "@emailjs/browser"
 
 const Form = () => {
 
-    const form: any = useRef();
+    const form= useRef();
 
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -22,6 +22,7 @@ const Form = () => {
         setName("");
         setEmail("");
         setMessage("");
+        alert("Thank you for contacting me, I will get in touch as soon as possible.")
     } 
 
     return (
