@@ -7,7 +7,7 @@ const Home = (props: any) => {
             <motion.div variants={props.variants} className="w-full flex justify-center">
                 <section className="h-max text-[#9BA4B5] text-[14px] lg:text-[18px]" id={navItems[0].sectionName}>
                     <p className="lg:px-10 lg:pt-[15vh] pt-[5vh] mb-5">
-                        Hello, I'm Plode Vanichaka, a Thai-American based in Bangkok, Thailand. I'm a passionate developer with a focus on <Highlight word="web3 development"/>, <Highlight word="front-end development" />, and <Highlight word="various other areas in programming in technology" />.
+                        Hello, I'm Plode Vanichaka, a Thai-American based in Bangkok, Thailand. I'm a passionate developer with a focus on <Highlight word="full-stack development"/>, <Highlight word="web3 development" />, and <Highlight word="various other areas in programming in technology" />.
                     </p>
                     <p className="lg:px-10 mb-5">
                         As an <Highlight word="American citizen" />, I want to emphasize that I am open to <Highlight word="remote work" /> opportunities and <Highlight word="comfortable adjusting" /> my work hours to align with the employer's time zone. With no visa or permit requirement, I offer employers the convenience and flexibility to collaborate <Highlight word="seamlessly across borders" />.
