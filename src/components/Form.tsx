@@ -1,9 +1,11 @@
 import { FormEvent, useRef, useState } from 'react';
 import emailjs from "@emailjs/browser"
 
+// TODO: add modal on screen after sending email. It will only appears for 3 seconds.
+
 const Form = () => {
 
-    const form= useRef();
+    const form= useRef<HTMLFormElement>(null);
 
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -12,12 +14,19 @@ const Form = () => {
     const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
-        emailjs.sendForm("service_nudy0y9", "template_lbowm08", form.current, "csr-uObou_1tQeqDL")
-        .then((result) => {
-            console.log(result.text);
-        }, (error) => {
-            console.log(error.text);
-        })
+        if (form.current) {
+            emailjs.sendForm(
+                "service_nudy0y9", 
+                "template_lbowm08",
+                form.current, 
+                "csr-uObou_1tQeqDL"
+            )
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            })
+        }
 
         setName("");
         setEmail("");
