@@ -12,7 +12,7 @@ const Form = () => {
     const [message, setMessage] = useState("");
     const [open, setOpen] = useState<boolean>(false);
 
-    const handleClose = (reason?: string) => {
+    const handleClose = (event: React.SyntheticEvent | Event , reason?: string) => {
         if (reason === 'clickaway') {
             return;
         }
