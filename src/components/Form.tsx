@@ -1,6 +1,5 @@
 import { FormEvent, useRef, useState } from 'react';
 import emailjs from "@emailjs/browser"
-
 // TODO: add modal on screen after sending email. It will only appears for 3 seconds.
 
 const Form = () => {
@@ -31,7 +30,7 @@ const Form = () => {
         setName("");
         setEmail("");
         setMessage("");
-        alert("Thank you for contacting me, I will get in touch as soon as possible.")
+        alert("Thank you for messaging me, I will get back to you ASAP")
     } 
 
     return (
