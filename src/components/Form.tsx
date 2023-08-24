@@ -1,6 +1,7 @@
 import { FormEvent, useRef, useState } from 'react';
-import emailjs from "@emailjs/browser"
-// TODO: add modal on screen after sending email. It will only appears for 3 seconds.
+import emailjs from "@emailjs/browser";
+import Snackbar from "@mui/material/Snackbar";
+import Alert from '@mui/material/Alert';
 
 const Form = () => {
 
@@ -9,6 +10,15 @@ const Form = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
+    const [open, setOpen] = useState<boolean>(false);
+
+    const handleClose = (reason?: string) => {
+        if (reason === 'clickaway') {
+            return;
+        }
+
+        setOpen(false);
+    }
 
     const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -22,6 +32,7 @@ const Form = () => {
             )
             .then((result) => {
                 console.log(result.text);
+                setOpen(true);
             }, (error) => {
                 console.log(error.text);
             })
@@ -30,7 +41,7 @@ const Form = () => {
         setName("");
         setEmail("");
         setMessage("");
-        alert("Thank you for messaging me, I will get back to you ASAP")
+
     } 
 
     return (
@@ -54,6 +65,13 @@ const Form = () => {
                 />
             </div>
             <button type='submit' className='bg-violet-500 rounded-sm' >Send</button>
+            <Snackbar
+                open={open}
+                autoHideDuration={3000}
+                onClose={handleClose}
+            >
+                <Alert>Email Sent!</Alert>
+            </Snackbar>
         </form>
     )
 }
