@@ -14,6 +14,7 @@ const Form = () => {
 
     const handleClose = (event: React.SyntheticEvent | Event , reason?: string) => {
         if (reason === 'clickaway') {
+            console.log(event)
             return;
         }
 
