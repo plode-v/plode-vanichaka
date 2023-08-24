@@ -1,4 +1,4 @@
-import { easyFit } from "../assets"
+import { easyFit, omni } from "../assets"
 export const navItems = [
     {
         name: "About Me",
@@ -61,7 +61,7 @@ export const projects = [
         name: "Omni-AI",
         desc: "Introducing Omni-AI, the all-in-one AI services platform that revolutionizes your creative experience. With seamless access to ChatGPT, DALL-E, and Replicate AI, Omni-AI empowers you to explore the realms of conversation, image generation, music, and videos – all under one subscription. Built on Next.js and styled with Tailwind CSS, the platform offers lightning-fast performance and a modern interface. Clerk ensures secure authentication, while the subscription-based model simplifies your workflow.",
         techStack: ['Nextjs', "Tailwind CSS", "Shadcn-ui", "Clerk Auth"],
-        image: "",
+        image: omni,
         link: "https://omni-ai.vercel.app"
     },
     {
