@@ -17,3 +17,15 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+
+::selection {
+  background-color: orangered;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
