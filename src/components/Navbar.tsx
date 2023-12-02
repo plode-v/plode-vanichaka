@@ -1,23 +1,48 @@
+'use client'
 import React from 'react'
+import { motion } from 'framer-motion'
+
+const container = {
+  hidden: {
+    scale: 1,
+  },
+  visible: {
+    scale: 1,
+    transition: {
+      staggerChildren: 0.1
+    }
+  }
+}
+
+const item = {
+  hidden: {
+    opacity: 0,
+    y: -20
+  },
+  visible: {
+    opacity: 1,
+    y: 0
+  }
+}
 
 const Navbar = () => {
   return (
-    <div className='w-full h-[80px] text-[#fafafa] flex justify-center z-20 absolute font-poppins'>
+    <motion.div variants={container} initial="hidden" animate="visible" className='w-full h-[80px] text-[#fafafa] flex justify-center z-20 absolute font-poppins'>
       <div className='bg-transparent h-full 3xl:w-2/3 w-full flex items-center justify-between p-8 duration-300'>
-          <p className='text-[18px] font-[300]'>Plode Vanichaka</p>
+          <motion.p variants={item} className='text-[18px] font-[300]'>Plode Vanichaka</motion.p>
         <div className='flex gap-8 3xl:text-[18px] font-[100]'>
-          <div className='py-5 relative flex-col flex items-center'>
-            <button className='hover:underline'>About</button>
-          </div>
-          <div className='py-5'>
-            <button className=''>Work</button>
-          </div>
-          <div className='py-5'>
-            <button className=''>Contact</button>
-          </div>
+          <motion.div variants={item} className='py-5 relative flex-col flex items-center'>
+            <button className='hover:font-[300]'>About</button>
+          </motion.div>
+          <motion.div variants={item} className='py-5'>
+            <button className='hover:font-[300]'>Work</button>
+          </motion.div>
+          <motion.div variants={item} className='py-5'>
+            <button className='hover:font-[300]'>Contact</button>
+          </motion.div>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
