@@ -32,13 +32,13 @@ const Navbar = () => {
           <motion.p variants={item} className='text-[18px] font-[300]'>Plode Vanichaka</motion.p>
         <div className='flex gap-8 3xl:text-[18px] font-[100]'>
           <motion.div variants={item} className='py-5 relative flex-col flex items-center'>
-            <button className='hover:font-[300]'>About</button>
+            <button>About</button>
           </motion.div>
           <motion.div variants={item} className='py-5'>
-            <button className='hover:font-[300]'>Work</button>
+            <button>Work</button>
           </motion.div>
           <motion.div variants={item} className='py-5'>
-            <button className='hover:font-[300]'>Contact</button>
+            <button>Contact</button>
           </motion.div>
         </div>
       </div>
