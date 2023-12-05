@@ -8,15 +8,18 @@ const Projects = () => {
   const projectList = [
     {
       name: "vcs group",
-      role: "developer"
+      role: "developer",
+      image: 'example 1'
     },
     {
       name: 'ferworks security',
-      role: 'designer & developer'
+      role: 'designer & developer',
+      image: 'example 2'
     },
     {
       name: 'maison berger thailand',
-      role: 'teamlead developer'
+      role: 'teamlead developer',
+      image: 'example 3'
     }
 
   ]
@@ -31,6 +34,7 @@ const Projects = () => {
                   key={index}
                   name={project.name}
                   role={project.role}
+                  image={project.image}
                 />
             ))}
           </div>
