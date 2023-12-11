@@ -7,10 +7,12 @@ import { projects } from '@/utils/data'
 const Projects = () => {
 
   return (
-    <div className={`min-h-screen w-full flex bg-neutral-100 justify-center`}>
+    <div className={`h-full w-full flex bg-neutral-100 justify-center`}>
         <div className='flex w-[95%] 3xl:w-2/3 justify-center duration-300'>
           <div className='w-full h-full'>
-            <p className='text-[50px] 3xl:text-[65px] font-[700] py-12 opacity-20 uppercase'>projects</p>
+            <div className='h-[150px] w-full flex'>
+              <p className='text-[50px] 3xl:text-[65px] font-[700] opacity-20 uppercase h-full w-full items-center flex justify-start'>projects</p>
+            </div>
             {projects.map((project, index) => (
                 <ProjectComponent
                   key={index}
@@ -19,6 +21,7 @@ const Projects = () => {
                   image={project.image}
                 />
             ))}
+            <div className='w-full h-[150px] bg-neutral-100' />
           </div>
         </div>
     </div>
