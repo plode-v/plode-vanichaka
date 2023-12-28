@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 interface Props {
   name: string;
@@ -7,9 +7,27 @@ interface Props {
   image: string;
 }
 
+interface Positions {
+  x: number;
+  y: number;
+}
+
 const ProjectComponent = ({ name, role, image }: Props) => {
 
   const [visible, setVisible] = useState<boolean>(false);
+  const [position, setPosition] = useState<Positions>({ x: 0, y: 0 })
+
+  useEffect(() => {
+    const updateCursorPosition = (e: MouseEvent) => {
+      setPosition({ x: e.clientX, y: e.clientY });
+    }
+
+    window.addEventListener('mousemove', updateCursorPosition);
+
+    return () => {
+      window.addEventListener('mousemove', updateCursorPosition);
+    }
+  }, [])
 
   const handleMouseMove = () => setVisible(true);
   const handleMouseOut = () => setVisible(false);
@@ -26,9 +44,11 @@ const ProjectComponent = ({ name, role, image }: Props) => {
           </div>
         </div>
       </div>
-      <div className={`${visible ? "fixed" : "hidden"} bg-neutral-300 bottom-0 right-0 lg:h-[300px] 3xl:h-[400px] aspect-[1.78] m-20 duration-300 flex items-center justify-center`}>
+      {/* <div className={`${visible ? "absolute" : "hidden"} bg-neutral-300 bottom-0 right-0 lg:h-[300px] 3xl:h-[400px] aspect-[1.78] m-20  duration-300 flex items-center justify-center`}>
         <h1 className='opacity-20 text-[60px] font-[700] tracking-wider uppercase'>{image}</h1>
-      </div>
+      </div> */}
+        <div className={`${visible ? 'absolute' : 'hidden'} bg-neutral-300 lg:h-[300px] 3xl:h-[400px] aspect-[1.78]`} style={{}}>
+        </div>
     </div>
   )
 }

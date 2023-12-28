@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "framer-motion": "^10.16.5",
+    "gsap": "^3.12.4",
+    "mouse-follower": "^1.1.2",
     "next": "14.0.3",
     "react": "^18",
     "react-dom": "^18"
