@@ -1,29 +1,33 @@
 import React, { useEffect, useState } from 'react'
 
-interface Position {
+interface Positions {
     x: number;
     y: number;
 }
 
-const CursorFollower = ({ children }: { children: React.ReactNode }) => {
+interface Children {
+    children: React.ReactNode;
+}
 
-    const [position, setPosition] = useState<Position>({ x: 0, y: 0 })
+const CursorFollower = ({ children }: Children) => {
+
+    const [position, setPosition] = useState<Positions>({ x: 0, y: 0 });
 
     useEffect(() => {
-        const updateCursorPosition = (e: MouseEvent) => {
-            setPosition({ x: e.clientX, y: e.clientY });
-        };
+        const updateCursorPosition = (event: MouseEvent) => {
+            setPosition({ x: event.clientX, y: event.clientY + window.scrollY });
+        }
 
         document.addEventListener("mousemove", updateCursorPosition);
 
         return () => {
-            document.removeEventListener("mousemove", updateCursorPosition);
+            document.removeEventListener('mousemove', updateCursorPosition)
         }
     }, []);
 
   return (
-    <div className='absolute'>
-        {children}
+    <div className='absolute pointer-events-none' style={{ left: position.x, top: position.y }}>
+        { children }
     </div>
   )
 }

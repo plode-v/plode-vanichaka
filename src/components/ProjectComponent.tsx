@@ -1,5 +1,6 @@
 'use client'
 import React, { useEffect, useState } from 'react'
+import CursorFollower from './features/CursorFollower';
 
 interface Props {
   name: string;
@@ -15,19 +16,6 @@ interface Positions {
 const ProjectComponent = ({ name, role, image }: Props) => {
 
   const [visible, setVisible] = useState<boolean>(false);
-  const [position, setPosition] = useState<Positions>({ x: 0, y: 0 })
-
-  useEffect(() => {
-    const updateCursorPosition = (e: MouseEvent) => {
-      setPosition({ x: e.clientX, y: e.clientY });
-    }
-
-    window.addEventListener('mousemove', updateCursorPosition);
-
-    return () => {
-      window.addEventListener('mousemove', updateCursorPosition);
-    }
-  }, [])
 
   const handleMouseMove = () => setVisible(true);
   const handleMouseOut = () => setVisible(false);
@@ -44,11 +32,11 @@ const ProjectComponent = ({ name, role, image }: Props) => {
           </div>
         </div>
       </div>
-      {/* <div className={`${visible ? "absolute" : "hidden"} bg-neutral-300 bottom-0 right-0 lg:h-[300px] 3xl:h-[400px] aspect-[1.78] m-20  duration-300 flex items-center justify-center`}>
-        <h1 className='opacity-20 text-[60px] font-[700] tracking-wider uppercase'>{image}</h1>
-      </div> */}
-        <div className={`${visible ? 'absolute' : 'hidden'} bg-neutral-300 lg:h-[300px] 3xl:h-[400px] aspect-[1.78]`} style={{}}>
-        </div>
+        <CursorFollower>
+          <div className={`${visible ? 'absolute' : 'hidden'} bg-neutral-300 lg:h-[250px] 3xl:h-[300px] aspect-[1.78] translate-x-1 translate-y-1 flex items-center justify-center`}>
+            <h1 className='text-[64px] uppercase opacity-20 font-bold tracking-wider text-center'>{image}</h1>
+          </div>
+        </CursorFollower>
     </div>
   )
 }
