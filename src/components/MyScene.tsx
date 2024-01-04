@@ -11,7 +11,7 @@ const MyScene = () => {
 
     return (
         <div className="h-full w-screen flex justify-center items-center">
-            <Canvas camera={{position: [-2, 3, -2], fov: 10 }} className="flex w-screen">
+            <Canvas camera={{position: [3, 0, -4], fov: 10 }} className="flex w-screen">
                 <OrbitControls enableZoom={false} enablePan={false} enableRotate={true} />
                 <Sparkles 
                     size={100}
