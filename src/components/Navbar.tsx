@@ -33,9 +33,11 @@ const Navbar = () => {
 				<motion.a variants={motionItem} href="mailto:vanichaka.plode@gmail.com" target="_blank">
 					<FiMail className="social-icons" />
 				</motion.a>
-				<motion.a variants={motionItem} href={resume} target="_blank">
+				
+				{/* Hide download resume */}
+				{/* <motion.a variants={motionItem} href={resume} target="_blank">
 					<FiFileText className="social-icons" />
-				</motion.a>
+				</motion.a> */}
 			</motion.div>
 		</motion.nav>
 	)

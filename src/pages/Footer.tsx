@@ -6,6 +6,7 @@ const Footer = (props: any) => {
             <p className="text-center text-[10px] text-[#9BA4B5] tracking-tighter">
                 Built with Vite React Typescript and Tailwind CSS, and deployed with Vercel.
             </p>
+            <p className="text-center text-[12px]">Plode Vanichaka 2024</p>
         </motion.div>
     )
 }
