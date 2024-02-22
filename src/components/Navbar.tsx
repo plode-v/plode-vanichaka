@@ -1,6 +1,5 @@
-import { FiGithub, FiMail, FiLinkedin, FiFileText } from "react-icons/fi"
+import { FiGithub, FiMail, FiLinkedin } from "react-icons/fi"
 import { motion } from "framer-motion"
-import { resume } from "../assets"
 
 import { navItems, motionItem } from '../constants'
 import "./index.css"
@@ -33,11 +32,6 @@ const Navbar = () => {
 				<motion.a variants={motionItem} href="mailto:vanichaka.plode@gmail.com" target="_blank">
 					<FiMail className="social-icons" />
 				</motion.a>
-				
-				{/* Hide download resume */}
-				{/* <motion.a variants={motionItem} href={resume} target="_blank">
-					<FiFileText className="social-icons" />
-				</motion.a> */}
 			</motion.div>
 		</motion.nav>
 	)
