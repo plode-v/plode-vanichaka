@@ -19,6 +19,7 @@ const Projects = () => {
                   name={project.name}
                   role={project.role}
                   image={project.image}
+                  link={project.link}
                 />
             ))}
             <div className='w-full h-[150px] bg-neutral-100' />

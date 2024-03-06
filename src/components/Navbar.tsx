@@ -31,13 +31,13 @@ const Navbar = () => {
   return (
     <motion.div variants={container} initial="hidden" animate="visible" className='w-full h-[80px] text-[#fafafa] flex justify-center z-20 absolute font-poppins'>
       <div className='bg-transparent h-full 3xl:w-2/3 w-full flex items-center justify-between p-8 duration-300'>
-          <motion.p variants={item} className='text-[18px] font-[300]'>Plode Vanichaka</motion.p>
+          <motion.a variants={item} className='text-[18px] font-[300]' href='/'>Plode Vanichaka</motion.a>
         <div className='flex gap-8 3xl:text-[18px] text-[1em] font-[100]'>
           {buttons.map((button, index) => (
             <motion.div
               key={index}
               variants={item}
-              className='py-5'
+              className='py-5 hover:text-orange-400'
             >
               <button className='capitalize hover:scale-110 duration-75 tracking-widest'>{button}</button>
             </motion.div>

@@ -3,13 +3,13 @@ export const projects = [
         name: "vcs group",
         role: 'developer',
         image: 'example 1',
-        link: ''
+        link: '/vcs-group'
     },
     {
         name: 'ferworks security',
         role: 'designer & developer',
         image: 'example 2',
-        link: ''
+        link: '/ferworks'
     },
     {
         name: 'maison berger thailand',

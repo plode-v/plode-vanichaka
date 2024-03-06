@@ -1,19 +1,16 @@
 'use client'
 import React, { useEffect, useState } from 'react'
 import CursorFollower from './features/CursorFollower';
+import Link from 'next/link';
 
 interface Props {
   name: string;
   role: string;
   image: string;
+  link: string;
 }
 
-interface Positions {
-  x: number;
-  y: number;
-}
-
-const ProjectComponent = ({ name, role, image }: Props) => {
+const ProjectComponent = ({ name, role, image, link }: Props) => {
 
   const [visible, setVisible] = useState<boolean>(false);
 
@@ -21,7 +18,7 @@ const ProjectComponent = ({ name, role, image }: Props) => {
   const handleMouseOut = () => setVisible(false);
 
   return (
-    <div className='h-[180px] w-full border-neutral-300 border-y cursor-pointer flex items-center justify-center hover:bg-neutral-200 duration-150' onMouseMove={handleMouseMove} onMouseOut={handleMouseOut}>
+    <Link className='h-[180px] w-full border-neutral-300 border-y cursor-pointer flex items-center justify-center hover:bg-orange-500 duration-200' onMouseMove={handleMouseMove} onMouseOut={handleMouseOut} href={link}>
       <div className='flex items-center justify-between h-full w-5/6'>
         <div className='flex-1 flex justify-start'>
           <p className='font-[700] uppercase text-[30px]'>{name}</p>
@@ -37,7 +34,7 @@ const ProjectComponent = ({ name, role, image }: Props) => {
             <h1 className='text-[64px] uppercase opacity-20 font-bold tracking-wider text-center'>{image}</h1>
           </div>
         </CursorFollower>
-    </div>
+    </Link>
   )
 }
 
