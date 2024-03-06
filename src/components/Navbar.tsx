@@ -25,7 +25,7 @@ const item = {
   }
 }
 
-const buttons = ['about', 'work', 'contact'];
+const buttons = ['about', 'projects', 'contact'];
 
 const Navbar = () => {
   return (
@@ -39,7 +39,7 @@ const Navbar = () => {
               variants={item}
               className='py-5 hover:text-orange-400'
             >
-              <button className='capitalize hover:scale-110 duration-75 tracking-widest'>{button}</button>
+              <a className='capitalize hover:scale-110 duration-75 tracking-widest' href={`#${button}`}>{button}</a>
             </motion.div>
           ))}
         </div>

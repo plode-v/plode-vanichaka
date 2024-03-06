@@ -7,7 +7,7 @@ import { projects } from '@/utils/data'
 const Projects = () => {
 
   return (
-    <div className={`h-full w-full flex bg-neutral-100 justify-center`}>
+    <div className={`h-full w-full flex bg-neutral-100 justify-center`} id='projects'>
         <div className='flex w-[95%] 3xl:w-2/3 justify-center duration-300'>
           <div className='w-full h-full'>
             <div className='h-[150px] w-full flex'>
