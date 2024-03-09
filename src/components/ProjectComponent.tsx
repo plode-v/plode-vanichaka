@@ -2,11 +2,13 @@
 import React, { useEffect, useState } from 'react'
 import CursorFollower from './features/CursorFollower';
 import Link from 'next/link';
+import Image from 'next/image';
+import { mbScreenshot } from '../../public/assets';
 
 interface Props {
   name: string;
   role: string;
-  image: string;
+  image: any;
   link: string;
 }
 
@@ -31,7 +33,7 @@ const ProjectComponent = ({ name, role, image, link }: Props) => {
       </div>
         <CursorFollower>
           <div className={`${visible ? 'absolute' : 'hidden'} bg-neutral-300 lg:h-[250px] 3xl:h-[300px] aspect-[1.78] translate-x-1 translate-y-1 flex items-center justify-center`}>
-            <h1 className='text-[64px] uppercase opacity-20 font-bold tracking-wider text-center'>{image}</h1>
+            <Image src={image} alt="prject image" className='h-full w-full' />
           </div>
         </CursorFollower>
     </Link>

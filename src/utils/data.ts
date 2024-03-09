@@ -1,20 +1,22 @@
+import { mbScreenshot, ferworksScreenshot, vcsGroupScreenshot } from "../../public/assets"
+
 export const projects = [
     {
         name: "vcs group",
         role: 'developer',
-        image: 'example 1',
+        image: vcsGroupScreenshot,
         link: '/vcs-group'
     },
     {
         name: 'ferworks security',
         role: 'designer & developer',
-        image: 'example 2',
+        image: ferworksScreenshot,
         link: '/ferworks'
     },
     {
         name: 'maison berger thailand',
         role: 'developer & admin',
-        image: 'example 3',
+        image: mbScreenshot,
         link: ''
     }
 ]

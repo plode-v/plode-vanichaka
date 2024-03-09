@@ -25,7 +25,7 @@ const item = {
   }
 }
 
-const buttons = ['about', 'projects', 'contact'];
+const buttons = ['about', 'projects', 'contact']; // add products later to sell my website templates
 
 const Navbar = () => {
   return (
